@@ -11,6 +11,7 @@
 }
 body{
     background:url(../images/Untitled\ design.png);
+    background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
