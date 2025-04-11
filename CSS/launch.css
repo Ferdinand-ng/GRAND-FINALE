@@ -1,0 +1,104 @@
+:root {
+    --main-color: #000;
+    --accent-color: #fff;
+    --main-font :"Chakra Petch", sans-serif;
+    --sub-font : "Montserrat", sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background: black;
+    animation: bgmove 10s ease infinite;
+    font-family: var(--sub-font);
+    gap: 10px;
+}
+.app-header{
+    height: auto;
+    color: azure;
+
+    font-size: 3rem;
+    margin-top: 11%;
+    display: grid;
+    place-items: center;
+}
+#liq-anim{
+    animation: none;
+    z-index: -100;
+}
+.application{
+    padding-top: 2%;
+    display: grid;
+    place-items: center;
+}
+.p{
+    color: white;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 0.1fr 0.1fr 0.1fr;
+    gap: 2px;
+    font-size: 0.5rem;
+    margin: 0;
+}
+p{
+    color: white;
+    /* display: grid; */
+    /* place-items: center; */
+    text-align: center;
+    margin-top: 10%;
+}
+span{
+    font-weight: 400;
+}
+.par{
+    text-align: right;
+}
+.par p{
+    text-align: right;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.info-one{
+    margin-top: 10%;
+    padding-bottom: 20%;
+}
+img{
+    height: 400px;
+}
+@media screen and (max-width: 918px) {
+    img{
+        height: 200px;
+    }
+    .nav-bar{
+        background: black;
+    }
+    .app-header{
+        font-size: 0.4rem;
+        width: 100%;
+        margin-top: 20%;
+    }
+    #liq-anim{
+        font-size: 2rem;
+    }
+.twotwo{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 20px;
+    padding-right: 50px;
+}
+    .info-one img{
+        height: 210px !important;
+        place-self: flex-end;
+        place-self: right;
+    }
+    .info-one p{
+        font-size: 1rem !important;
+        margin: 0 !important;
+    }
+    .info-one h3{
+        margin: 0 !important;
+    }
+
+}

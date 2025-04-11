@@ -1,0 +1,249 @@
+:root {
+    --main-color: #000;
+    --accent-color: #fff;
+    --main-font :"Chakra Petch", sans-serif;
+    --sub-font : "Montserrat", sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    background-size:auto;
+    background: black;
+}
+.road-bod{
+    height: fit-content;
+    display: grid;
+    place-items: center;
+    margin-top: 15%;
+}
+h1{
+    background: linear-gradient(to right, #292929, #fff, #292929);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    display: grid;
+    place-items: center;
+    margin-bottom: 10%;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    padding: 0;
+    margin: 0;
+}
+.mapcont{
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    position: relative;
+}
+
+.right{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 100px;
+    margin-left: 20px;
+}
+.left{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 100px;
+    margin-top: 80%;
+    margin-right: 20px;
+}
+h3, p{
+    margin-bottom: 5px;
+}
+h3{
+    font-size: 1.4rem;
+}
+.rr{
+    width: 250px;
+    height: auto;
+     background: linear-gradient(to bottom, rgb(36, 36, 36), black);
+     border-top: 1px solid   rgb(72, 71, 71);
+     border-left: 1px solid   rgb(72, 71, 71);
+     border-right: 1px solid rgb(72, 71, 71);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: var(--accent-color);
+    font-family: var(--sub-font);
+    font-size: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+#head{
+    font-weight: 900;
+}
+.shii{
+    display: flex;
+    flex-direction: column;
+    list-style: disc;
+}
+.nav-bar{
+    background-color: black;
+    z-index: 2000;
+}
+#progress{
+    position: relative;
+    animation: reveal 2s ease-in-out forwards;
+    height: fit-content;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    width: 40px;
+}
+@keyframes reveal {
+    from{
+        height: 0%;
+    }
+    to{
+        height: 100%;
+    }
+}
+#tri-one, #tri-two{
+    position: absolute;
+}
+#tri-one{
+    transform: rotate(180deg);
+    top:  3px;
+
+}
+#tri-two{
+    top: 750px;
+}
+#lips-one, #lips-two{
+    position: absolute;
+}
+#lips-one{
+    top: 230px;
+}
+#lips-two{
+    top: 370px;
+}
+
+#liq-anim{
+    animation: none;
+    font-size: 2.5rem;
+}
+#rod-host{
+    position: absolute;
+    top: 48px;
+}
+#phase-one, #phase-two, #phase-three, #phase-four{
+    opacity: 0;
+}
+#phase-one{
+    animation: revone 2s ease forwards;
+}
+@keyframes revone {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+#phase-two{
+    animation: revtwo 2s ease forwards 1s;
+}
+@keyframes revtwo {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+#phase-three{
+    animation: revthree 2s ease forwards 1.5s;
+}
+@keyframes revthree {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+#phase-four{
+    animation: revfour 2s ease forwards 1.7s;
+}
+@keyframes revfour {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.opacityr{
+    opacity: 1;
+    transition: opacity 200ms;
+}
+@media screen and (max-width: 768px) {
+    .mapcont{
+        height: auto;
+        display: grid;
+        place-items: center;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto;
+        margin-bottom: 100px;
+    }
+.rr{
+    height: 179.5px;
+    font-size: 0.4rem;
+}
+.right, .left{
+    grid-column: 2;
+    margin: 0;
+    gap: 0;
+}
+h3{
+    font-size: 1rem;
+}
+.right{
+    grid-row:1 / 3 ;
+}
+#tri-two{
+    top: 672.9px;
+    z-index: 4000;
+    right:6px
+}
+.left{
+    grid-row:3 / 5
+}
+#progress{
+    grid-column: 1 ;
+    grid-row: span 4;
+}
+#phase-two{
+    position: relative;
+    bottom:179.5px ;
+}
+#phase-three{
+    position: relative;
+    bottom: -179.5px;
+}
+#liq-anim h1{
+    font-size: 2.5rem;
+}
+}
+@media screen and (max-width: 375px){
+    .mapcont{
+        margin-top: 100px;
+    }
+}
