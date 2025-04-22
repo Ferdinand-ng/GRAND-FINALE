@@ -79,7 +79,7 @@ h3{
     border-bottom-left-radius: 10px;
     color: var(--accent-color);
     font-family: var(--sub-font);
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -119,8 +119,7 @@ h3{
 }
 #tri-one{
     transform: rotate(180deg);
-    top:  3px;
-
+    top: 3px;
 }
 #tri-two{
     top: 750px;
@@ -132,7 +131,7 @@ h3{
     top: 230px;
 }
 #lips-two{
-    top: 370px;
+    top: 450px;
 }
 
 #liq-anim{
@@ -204,8 +203,9 @@ h3{
         margin-bottom: 100px;
     }
 .rr{
-    height: 179.5px;
-    font-size: 0.4rem;
+    height: auto;
+    min-height: 200px;
+    font-size: 0.7rem;
 }
 .right, .left{
     grid-column: 2;
@@ -229,17 +229,27 @@ h3{
 #progress{
     grid-column: 1 ;
     grid-row: span 4;
+    height: 500px;
+    background: linear-gradient(to bottom, #4a4a4a, #1a1a1a);
+    border-radius: 100px;
+    width: 10px;
+    margin-right: 20px;
 }
 #phase-two{
     position: relative;
-    bottom:179.5px ;
+    bottom: 0;
+    margin-top: 20px;
 }
 #phase-three{
     position: relative;
-    bottom: -179.5px;
+    bottom: 0;
+    margin-top: 20px;
 }
 #liq-anim h1{
     font-size: 2.5rem;
+}
+#tri-one, #rod-host, #tri-two, #lips-one, #lips-two{
+    display: none;
 }
 }
 @media screen and (max-width: 375px){
