@@ -200,7 +200,7 @@ h3{
         place-items: center;
         grid-template-columns: auto auto;
         grid-template-rows: auto auto auto auto;
-        margin-bottom: 100px;
+        margin-bottom: 200px;
     }
 .rr{
     height: auto;
@@ -237,12 +237,12 @@ h3{
 }
 #phase-two{
     position: relative;
-    bottom: 0;
+    bottom: 260.666px;
     margin-top: 20px;
 }
 #phase-three{
     position: relative;
-    bottom: 0;
+    bottom: -320.666px;
     margin-top: 20px;
 }
 #liq-anim h1{
